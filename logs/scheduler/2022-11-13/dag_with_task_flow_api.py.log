@@ -42,3 +42,43 @@
 [2022-11-13T00:55:15.172+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:55:15.172+0000] {dag.py:2585} INFO - Sync 1 DAGs
 [2022-11-13T00:55:15.207+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:55:15.207+0000] {dag.py:3340} INFO - Setting next_dagrun for dag_with_taskflow_api_v1 to 2022-11-08T00:00:00+00:00, run_after=2022-11-09T00:00:00+00:00
 [2022-11-13T00:55:15.235+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/dag_with_task_flow_api.py took 0.174 seconds
+[2022-11-13T00:55:45.391+0000] {processor.py:154} INFO - Started process (PID=347) to work on /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:55:45.394+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/dag_with_task_flow_api.py for tasks to queue
+[2022-11-13T00:55:45.395+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:55:45.395+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:55:45.420+0000] {logging_mixin.py:120} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3437 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-11-13T00:55:45.428+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:55:45.428+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_name>, greet already registered for DAG: dag_with_taskflow_api_v1
+[2022-11-13T00:55:45.429+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:55:45.428+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): greet>, get_name already registered for DAG: dag_with_taskflow_api_v1
+[2022-11-13T00:55:45.437+0000] {processor.py:766} INFO - DAG(s) dict_keys(['dag_with_taskflow_api_v1']) retrieved from /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:55:45.481+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:55:45.481+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-13T00:55:45.512+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:55:45.512+0000] {dag.py:3340} INFO - Setting next_dagrun for dag_with_taskflow_api_v1 to 2022-11-08T00:00:00+00:00, run_after=2022-11-09T00:00:00+00:00
+[2022-11-13T00:55:45.534+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/dag_with_task_flow_api.py took 0.147 seconds
+[2022-11-13T00:56:15.780+0000] {processor.py:154} INFO - Started process (PID=392) to work on /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:56:15.781+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/dag_with_task_flow_api.py for tasks to queue
+[2022-11-13T00:56:15.783+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:56:15.783+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:56:15.808+0000] {logging_mixin.py:120} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3437 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-11-13T00:56:15.816+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:56:15.815+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_name>, greet already registered for DAG: dag_with_taskflow_api_v1
+[2022-11-13T00:56:15.816+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:56:15.816+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): greet>, get_name already registered for DAG: dag_with_taskflow_api_v1
+[2022-11-13T00:56:15.826+0000] {processor.py:766} INFO - DAG(s) dict_keys(['dag_with_taskflow_api_v1']) retrieved from /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:56:15.875+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:56:15.874+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-13T00:56:15.909+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:56:15.909+0000] {dag.py:3340} INFO - Setting next_dagrun for dag_with_taskflow_api_v1 to 2022-11-08T00:00:00+00:00, run_after=2022-11-09T00:00:00+00:00
+[2022-11-13T00:56:15.933+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/dag_with_task_flow_api.py took 0.157 seconds
+[2022-11-13T00:56:46.116+0000] {processor.py:154} INFO - Started process (PID=428) to work on /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:56:46.118+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/dag_with_task_flow_api.py for tasks to queue
+[2022-11-13T00:56:46.119+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:56:46.119+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:56:46.142+0000] {logging_mixin.py:120} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3437 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-11-13T00:56:46.149+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:56:46.149+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_name>, greet already registered for DAG: dag_with_taskflow_api_v1
+[2022-11-13T00:56:46.150+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:56:46.150+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): greet>, get_name already registered for DAG: dag_with_taskflow_api_v1
+[2022-11-13T00:56:46.158+0000] {processor.py:766} INFO - DAG(s) dict_keys(['dag_with_taskflow_api_v1']) retrieved from /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:56:46.202+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:56:46.201+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-13T00:56:46.234+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:56:46.233+0000] {dag.py:3340} INFO - Setting next_dagrun for dag_with_taskflow_api_v1 to 2022-11-08T00:00:00+00:00, run_after=2022-11-09T00:00:00+00:00
+[2022-11-13T00:56:46.255+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/dag_with_task_flow_api.py took 0.142 seconds
+[2022-11-13T00:57:16.470+0000] {processor.py:154} INFO - Started process (PID=472) to work on /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:57:16.471+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/dag_with_task_flow_api.py for tasks to queue
+[2022-11-13T00:57:16.472+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:57:16.472+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:57:16.495+0000] {logging_mixin.py:120} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/models/dag.py:3437 RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead.
+[2022-11-13T00:57:16.502+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:57:16.502+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): get_name>, greet already registered for DAG: dag_with_taskflow_api_v1
+[2022-11-13T00:57:16.503+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:57:16.503+0000] {taskmixin.py:205} WARNING - Dependency <Task(_PythonDecoratedOperator): greet>, get_name already registered for DAG: dag_with_taskflow_api_v1
+[2022-11-13T00:57:16.510+0000] {processor.py:766} INFO - DAG(s) dict_keys(['dag_with_taskflow_api_v1']) retrieved from /opt/airflow/dags/dag_with_task_flow_api.py
+[2022-11-13T00:57:16.548+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:57:16.548+0000] {dag.py:2585} INFO - Sync 1 DAGs
+[2022-11-13T00:57:16.575+0000] {logging_mixin.py:120} INFO - [2022-11-13T00:57:16.574+0000] {dag.py:3340} INFO - Setting next_dagrun for dag_with_taskflow_api_v1 to 2022-11-08T00:00:00+00:00, run_after=2022-11-09T00:00:00+00:00
+[2022-11-13T00:57:16.591+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/dag_with_task_flow_api.py took 0.125 seconds
