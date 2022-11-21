@@ -1,0 +1,30 @@
+[2022-11-20 21:36:08,201] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: dag_with_minio_s3_v4.sensor_minio_s3 manual__2022-11-20T21:33:55.498634+00:00 [queued]>
+[2022-11-20 21:36:08,210] {taskinstance.py:1032} INFO - Dependencies all met for <TaskInstance: dag_with_minio_s3_v4.sensor_minio_s3 manual__2022-11-20T21:33:55.498634+00:00 [queued]>
+[2022-11-20 21:36:08,211] {taskinstance.py:1238} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 21:36:08,212] {taskinstance.py:1239} INFO - Starting attempt 2 of 7
+[2022-11-20 21:36:08,212] {taskinstance.py:1240} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 21:36:08,222] {taskinstance.py:1259} INFO - Executing <Task(S3KeySensor): sensor_minio_s3> on 2022-11-20 21:33:55.498634+00:00
+[2022-11-20 21:36:08,227] {standard_task_runner.py:52} INFO - Started process 4988 to run task
+[2022-11-20 21:36:08,230] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'dag_with_minio_s3_v4', 'sensor_minio_s3', 'manual__2022-11-20T21:33:55.498634+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/dag_with_minio_s3.py', '--cfg-path', '/tmp/tmpoqia2624', '--error-file', '/tmp/tmppdcougx1']
+[2022-11-20 21:36:08,231] {standard_task_runner.py:77} INFO - Job 15: Subtask sensor_minio_s3
+[2022-11-20 21:36:08,274] {logging_mixin.py:109} INFO - Running <TaskInstance: dag_with_minio_s3_v4.sensor_minio_s3 manual__2022-11-20T21:33:55.498634+00:00 [running]> on host 412505171ea9
+[2022-11-20 21:36:08,315] {taskinstance.py:1426} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=charlie
+AIRFLOW_CTX_DAG_ID=dag_with_minio_s3_v4
+AIRFLOW_CTX_TASK_ID=sensor_minio_s3
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-20T21:33:55.498634+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-20T21:33:55.498634+00:00
+[2022-11-20 21:36:08,316] {s3_key.py:96} INFO - Poking for key : s3://airflow/data.csv
+[2022-11-20 21:36:08,317] {base_aws.py:401} INFO - Airflow Connection: aws_conn_id=mino_conn
+[2022-11-20 21:36:08,325] {base_aws.py:181} INFO - Credentials retrieved from extra_config
+[2022-11-20 21:36:08,326] {base_aws.py:93} INFO - Creating session with aws_access_key_id=AKIAIOSFODNN7EXAMPLE region_name=None
+[2022-11-20 21:36:08,338] {base_aws.py:168} INFO - role_arn is None
+[2022-11-20 21:36:08,343] {logging_mixin.py:109} WARNING - /home/airflow/.local/lib/python3.7/site-packages/airflow/providers/amazon/aws/hooks/base_aws.py:494 DeprecationWarning: client_type is deprecated. Set client_type from class attribute.
+[2022-11-20 21:36:13,368] {s3_key.py:96} INFO - Poking for key : s3://airflow/data.csv
+[2022-11-20 21:36:18,382] {s3_key.py:96} INFO - Poking for key : s3://airflow/data.csv
+[2022-11-20 21:36:18,390] {base.py:249} INFO - Success criteria met. Exiting.
+[2022-11-20 21:36:18,403] {taskinstance.py:1277} INFO - Marking task as SUCCESS. dag_id=dag_with_minio_s3_v4, task_id=sensor_minio_s3, execution_date=20221120T213355, start_date=20221120T213608, end_date=20221120T213618
+[2022-11-20 21:36:18,456] {local_task_job.py:154} INFO - Task exited with return code 0
+[2022-11-20 21:36:18,481] {local_task_job.py:264} INFO - 0 downstream tasks scheduled from follow-on schedule check
